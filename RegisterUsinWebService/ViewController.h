@@ -1,15 +1,11 @@
-//
-//  ViewController.h
-//  RegisterUsinWebService
-//
-//  Created by ahmedpro on 3/22/20.
-//  Copyright © 2020 ahmedpro. All rights reserved.
-//
-
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UIAlertViewDelegate, NSURLConnectionDelegate, NSURLConnectionDataDelegate>
 
+@property (weak, nonatomic) IBOutlet UITextField *nameTF;
+@property (weak, nonatomic) IBOutlet UITextField *phoneTF;
+
+- (IBAction)register:(UIButton *)sender;
 
 @end
 
